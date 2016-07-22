@@ -1,0 +1,65 @@
+{
+    "name": "小米的博客",
+    "version": "0.0.1",
+    "description": "刘德元的前端博客",
+    "keywords": [
+        ""
+    ],
+    "homepage": "https://xiaomibaobao.github.io",
+    "author": "xiaomibaobao <yueyuele@163.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xiaomibaobao"
+    },
+    "licenses": "MIT",
+    "idoc": {
+        "logo": "logo.jpg",
+        "theme": "blog",
+        "md": [
+            "index.md",
+            {
+                "React": []
+            },
+            {
+                "Angular": [
+                    "AngularJS 2.md",
+                    "AngularJS.md"
+                ]
+            },
+            {
+                "Node.js": [
+                    "node入门(2).md",
+                    "node 1.md",
+                    "Node.js知识详解.md"
+                ]
+            },
+            {
+                "前端工程": [
+                    "Gulp.md",
+                    "webpack入门及实践.md"
+                ]
+            },
+            {
+                "原生JavaScript": [
+                    "DOM.md",
+                    "ES6.md",
+                    "HTTP.md",
+                    "JS 基础知识拾遗.md",
+                    "函数.md",
+                    "事件.md",
+                    "AJAX.md",
+                    "面向对象.md"
+                ]
+            },
+            {
+                "设计、算法和思考": [
+                    "订阅发布模式详解.md",
+                    "性能优化点总结.md",
+                    "性能优化待办事项.md",
+                    "学习Git.md"
+                ]
+            },
+            "CONTACT.md"
+        ]
+    }
+}

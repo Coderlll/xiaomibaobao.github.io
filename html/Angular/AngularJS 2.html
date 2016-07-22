@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小米的博客</title>
+        
+        
+    
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                <img src="../../logo.jpg">
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">index</a></li><li><a href="#"><span></span>React</a><ul></ul></li><li><a href="#"><span></span>Angular</a><ul><li class="active"><a href="../../html/Angular/AngularJS 2.html">AngularJS 2</a></li><li><a href="../../html/Angular/AngularJS.html">AngularJS</a></li></ul></li><li><a href="#"><span></span>Node.js</a><ul><li><a href="../../html/Node.js/node入门(2).html">node入门(2)</a></li><li><a href="../../html/Node.js/node 1.html">node 1</a></li><li><a href="../../html/Node.js/Node.js知识详解.html">Node.js知识详解</a></li></ul></li><li><a href="#"><span></span>前端工程</a><ul><li><a href="../../html/前端工程/Gulp.html">Gulp</a></li><li><a href="../../html/前端工程/webpack入门及实践.html">webpack入门及实践</a></li></ul></li><li><a href="#"><span></span>原生JavaScript</a><ul><li><a href="../../html/原生JavaScript/DOM.html">DOM</a></li><li><a href="../../html/原生JavaScript/ES6.html">ES6</a></li><li><a href="../../html/原生JavaScript/HTTP.html">HTTP</a></li><li><a href="../../html/原生JavaScript/JS 基础知识拾遗.html">JS 基础知识拾遗</a></li><li><a href="../../html/原生JavaScript/函数.html">函数</a></li><li><a href="../../html/原生JavaScript/事件.html">事件</a></li><li><a href="../../html/原生JavaScript/AJAX.html">AJAX</a></li><li><a href="../../html/原生JavaScript/面向对象.html">面向对象</a></li></ul></li><li><a href="#"><span></span>设计、算法和思考</a><ul><li><a href="../../html/设计、算法和思考/订阅发布模式详解.html">订阅发布模式详解</a></li><li><a href="../../html/设计、算法和思考/性能优化点总结.html">性能优化点总结</a></li><li><a href="../../html/设计、算法和思考/性能优化待办事项.html">性能优化待办事项</a></li><li><a href="../../html/设计、算法和思考/学习Git.html">学习Git</a></li></ul></li><li><a href="../../html/CONTACT.html">CONTACT</a></li></ul>
+        </div>
+        
+        <!--
+        <div class="forkgithub"><a target="_blank" href="https://github.com/xiaomibaobao">fork on github</a></div>
+        -->
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+    
+        <div class="page-toc">
+            <ul><li><a href="#t0AngularJS 2">AngularJS 2</a><ul><li><a href="#t1RESTful">RESTful</a></li><li><a href="#t2directive 指令">directive 指令</a></li></ul></li></ul>
+        </div>
+
+        <div class="content markdown-body">
+
+            <h1 id="t0AngularJS 2">AngularJS 2 <a href="#t0AngularJS 2"> # </a></h1>
+<h3 id="t1RESTful">RESTful <a href="#t1RESTful"> # </a></h3>
+<p>&#x4E00;&#x79CD;&#x524D;&#x540E;&#x7AEF;API&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF0C;representive state transfer</p>
+<blockquote>
+<ul>
+<li>&#x6BCF;&#x4E00;&#x4E2A;URL&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#xFF0C;</li>
+<li>&#x8D44;&#x6E90;&#x5448;&#x73B0;&#x7684;<strong>&#x5177;&#x4F53;&#x5F62;&#x5F0F;</strong>&#x53EB;&#x505A;&#x4ED6;&#x7684;<strong>&#x8868;&#x73B0;</strong>&#x3002;</li>
+<li>&#x4E0D;&#x518D;&#x6839;&#x636E;&#x8DEF;&#x5F84;&#x6765;&#x5224;&#x65AD;&#xFF0C;&#x800C;&#x662F;&#x6839;&#x636E;&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x4E0B;&#xFF0C;&#x4E0D;&#x540C;&#x53C2;&#x6570;&#x548C;get post delete put&#x6765;&#x64CD;&#x4F5C;&#x3002;&#x5B9E;&#x73B0;&#x8868;&#x73B0;&#x5C42;&#x72B6;&#x6001;&#x8F6C;&#x6362;.</li>
+</ul>
+</blockquote>
+<h3 id="t2directive &#x6307;&#x4EE4;">directive &#x6307;&#x4EE4; <a href="#t2directive &#x6307;&#x4EE4;"> # </a></h3>
+<blockquote>
+<ul>
+<li>&#x4F7F;&#x7528; <code>.directive</code> &#x51FD;&#x6570;&#x6765;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6307;&#x4EE4;&#x3002;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#xFF0C;&#x88C5;&#x9970;&#x578B;&#x548C;&#x7EC4;&#x4EF6;&#x5F0F;&#x7684;&#x3002;</li>
+<li>&#x8981;&#x8C03;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;&#xFF0C;HTML &#x5143;&#x7D20;&#x4E0A;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;&#x540D;&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x9A7C;&#x5CF0;&#x6CD5;&#x6765;&#x547D;&#x540D;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#xFF0C;<code>runoobDirective,</code> &#x4F46;&#x5728;&#x4F7F;&#x7528;&#x5B83;&#x65F6;&#x9700;&#x8981;&#x4EE5; - &#x5206;&#x5272;, <code>runoob-directive:</code></li>
+</ul>
+</blockquote>
+<pre><code>//&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x88C5;&#x9970;&#x6211;&#x4EEC;&#x7684;&#x9875;&#x9762;&#x4E5F;&#x53EF;&#x4EE5;&#x521B;&#x9020;&#x6807;&#x7B7E;
+    //ng&#x5F00;&#x5934;&#x7684;&#x6307;&#x4EE4;&#x662F;angular&#x81EA;&#x5E26;&#x7684;&#x6307;&#x4EE4;&#xFF0C;&#x6211;&#x4EEC;&#x5199;&#x6307;&#x4EE4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0D;&#x8981;&#x7528;ng&#x5F00;&#x5934;
+    //&#x4E00;&#x5207;&#x4ECE;&#x6A21;&#x5757;&#x5F00;&#x59CB;
+    var app = angular.module(&apos;appModule&apos;,[]);
+    //&#x6211;&#x4EEC;&#x7684;&#x6307;&#x4EE4;&#x662F;`&#x4E0D;&#x4F9D;&#x8D56;`&#x4E8E;`&#x63A7;&#x5236;&#x5668;`&#x7684;
+    //&#x901A;&#x8FC7;&#x6A21;&#x5757;&#x58F0;&#x660E;&#x6307;&#x4EE4;
+    //param1&#xFF1A;&#x6307;&#x4EE4;&#x7684;&#x540D;&#x5B57;
+    //param2: &#x662F;&#x51FD;&#x6570;
+    app.directive(&apos;hello&apos;, function () {
+        //&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;
+        return {
+            restrict:&apos;EACM&apos;,//ECMA//&#x9650;&#x5236;&#x6307;&#x4EE4;&#x4F7F;&#x7528;&#x8303;&#x56F4;&#x9ED8;&#x8BA4;&#x4E3A;EA,class&#x6837;&#x5F0F;&#x9ED8;&#x8BA4;&#x4E0D;&#x4F1A;&#x66FF;&#x6362;&#xFF0C;&#x6CE8;&#x91CA;&#x5185;&#x5BB9;&#x88AB;&#x63D2;&#x5165;&#x540E;&#x4ECD;&#x7136;&#x770B;&#x4E0D;&#x5230;&#x4E00;&#x822C;&#x6211;&#x4EEC;&#x7684;&#x6307;&#x4EE4;&#x53EA;&#x5199;&#x5728;EA&#x4E0A;&#xFF08;element&#xFF0C;attribute&#xFF09;
+            replace:true,//&#x53EA;&#x4FDD;&#x7559;&#x6A21;&#x677F;&#x5185;&#x5BB9;&#x539F;&#x6709;&#x7684;&#x6307;&#x4EE4;&#x88AB;&#x66FF;&#x6362;&#x6389;
+            transclude:true,&#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x4FDD;&#x7559;&#xFF0C;
+            template:&apos;&lt;div&gt;angular baby,React MM&lt;/div&gt;&apos;,//&#x6A21;&#x677F;,&#x5C06;hello&#x6807;&#x7B7E;&#x91CC;&#x7684;&#x5185;&#x5BB9;&#x53D8;&#x4E3A;&lt;div&gt;Hello&lt;/div&gt;
+            //&#x4F20;&#x9012;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x8981;&#x901A;&#x8FC7;&#x5BF9;&#x8C61;&#x4F20;&#x9012; &#x952E;&#x4EE3;&#x8868;&#x7684;&#x662F;&#x540D;&#x5B57;&#xFF1A;
+            template:&apos;{{name}}{{myage}}&lt;div ng-click=&quot;add({person:name,personage:myage})&quot;&gt;angular MM&lt;/div&gt;&apos;
+            scope{
+            title:@/&amp;/=;//&amp;&#x7B26;&#x7528;&#x6765;&#x5F15;&#x7528;&#x6307;&#x4EE4;&#x4E0A;&#x7684;&#x65B9;&#x6CD5;&#x3002;//@&#x7B26;&#x662F;&#x4E0D;&#x652F;&#x6301;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A; &#x53D6;&#x5230;&#x7684;&#x53EA;&#x662F;&#x5B57;&#x7B26;&#x4E32;,//=&#x652F;&#x6301;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#xFF0C;&#x5F15;&#x7528;&#x7684;&#x662F;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x4E0B;&#x5BF9;&#x5E94;&#x7684;&#x53D8;&#x91CF;
+            }
+           compile: function (elements,attrs) {//&#x53C2;&#x6570;&#x53EF;&#x53D8;//elements&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x5143;&#x7D20;//attrs Attribute
+                var times = attrs[&apos;time&apos;]; //&#x83B7;&#x53D6;&#x7F16;&#x8BD1;&#x6B21;&#x6570;
+                var tmpl = elements.children();//&#x64CD;&#x4F5C;&#x6307;&#x4EE4;&#x6A21;&#x677F;,&#x5148;&#x83B7;&#x53D6;&#x9ED8;&#x8BA4;&#x7684;&#x6A21;&#x677F;&lt;div&gt;Hello zfpx&lt;/div&gt;
+                //&#x6839;&#x636E;&#x6B21;&#x6570;&#x751F;&#x6210;&#x8981;&#x8FFD;&#x52A0;&#x7684;&#x6A21;&#x677F;
+                //&#x56E0;&#x4E3A;&#x4EE5;&#x524D;&#x5DF2;&#x7ECF;&#x6709;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x4E86;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x8FFD;&#x52A0;time-1&#x4E2A;
+                for(var i =0; i&lt;times-1;i++){
+                    //append&#x5177;&#x6709;&#x79FB;&#x52A8;&#x6027;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8981;&#x514B;&#x9686;&#x51FA;&#x6765;
+                    elements.append(tmpl.clone());
+                }
+                return function () {
+                    console.log(&apos;link&apos;);
+                }
+            },//&#x5F53;&#x6211;&#x4EEC;&#x5199;&#x4E86;compile&#x51FD;&#x6570;&#x540E; link&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x4E0D;&#x7528;&#x81EA;&#x5DF1;&#x5728;&#x5199;link&#x51FD;&#x6570;
+            link: function (scope,element,attrs) {  //&#x94FE;&#x63A5;&#x51FD;&#x6570;
+                element.html(123);
+                //scope&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;
+                //element&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x7684;&#x5143;&#x7D20; element&#x4E3A;jq&#x5143;&#x7D20; angular.element
+                //attrs&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;
+                //&#x5C5E;&#x6027;&#x7684;&#x540D;&#x5B57;&#x7528;-&#x7684;&#x8BDD;&#x4E5F;&#x9700;&#x8981;&#x8F6C;&#x6362;&#x6210;&#x9A7C;&#x5CF0;&#x547D;&#x540D;
+                console.log(attrs[&apos;myText&apos;]);
+            }
+        }
+    });
+</code></pre><blockquote>
+<ul>
+<li>&#x6307;&#x4EE4;&#x4E4B;&#x95F4;&#x7684;&#x4EA4;&#x4E92;&#xFF1A;<pre><code>app.directive(&apos;lovemoney&apos;, function () {
+      //&#x5F53;&#x524D;&#x7684;lovemoney&#x6307;&#x4EE4;&#x662F;&#x4F9D;&#x8D56;&#x4E8E;girl&#x7684;
+      return {
+          restrict:&apos;A&apos;,
+          //&#x56E0;&#x4E3A;&#x5F53;&#x524D;&#x7684;lovemoney&#x548C;lovecry&#x5C31;&#x5728;&#x5F53;&#x524D;&#x7684;&#x6307;&#x4EE4;&#x4E0A;
+          require:&apos;^girl&apos;,
+        /*  require:&apos;girl&apos;,//&#x76F4;&#x63A5;&#x5199;girl&#x8868;&#x793A;&#x5728;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x4E0B;&#x67E5;&#x627E;&#xFF08;&#x5E73;&#x7EA7;&#xFF09;
+          require:&apos;^girl&apos;//&#x76F4;&#x63A5;&#x5199;girl&#x8868;&#x793A;&#x5728;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x4E0B;&#x67E5;&#x627E;&#xFF08;&#x5E73;&#x7EA7;+&#x4E0A;&#x4E00;&#x7EA7;&#xFF09;
+          require:&apos;?^girl&apos;,//&#x627E;&#x4E0D;&#x5230;&#x7684;&#x8BDD;&#x4E0D;&#x62A5;&#x9519;
+          require:&apos;?girl&apos;,//&#x627E;&#x4E0D;&#x5230;&#x7684;&#x8BDD;&#x4E0D;&#x62A5;&#x9519;*/
+          //&#x5F53;&#x6211;&#x4EEC;&#x4F9D;&#x8D56;&#x4E86;girl&#x6307;&#x4EE4;&#x5C31;&#x4F1A;&#x9ED8;&#x8BA4;&#x628A;girl&#x7684;&#x63A7;&#x5236;&#x7684;&#x5B9E;&#x4F8B;&#x6CE8;&#x5165;&#x8FDB;&#x6765;
+          link: function (scope,ememnts,attsr,girlCtrl) {
+              //girlCtrl&#x662F;girl&#x7684;controller&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5728;girl&#x63A7;&#x5236;&#x5668;&#x4E0A;&#x5B9A;&#x4E49;&#x7684;this&#x4E0A;&#x7684;&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x5C5E;&#x6027;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;girlCtrl&#x8C03;&#x7528;&#x5230;
+              girlCtrl.add(&apos;lovemoney&apos;);
+          }
+      }
+  })
+</code></pre></li>
+</ul>
+</blockquote>
+
+
+        </div>
+    
+</div>
+<style>
+    .page-toc{
+        overflow: hidden;
+        position:fixed;
+        left:50%;
+        margin-left:250px;
+	width:350px
+    }
+    .page-toc > ul li{
+        list-style-position: inside;
+	line-height:120%
+    }
+    .page-toc > ul{
+        transition: all 0.2s;
+        position: relative;
+    }
+    .page-toc > ul a {
+	color:#009a61;
+	font-size:110% ! important;
+	line-height:120%
+    }
+    .page-toc > ul .red{
+        background: #f3f3f3;
+        z-index: 1;
+        border-left: 3px solid #009a61;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+	color:#000
+    }
+
+    .markdown-body{
+	font-size: 120% ! important;
+        max-width:800px;
+    }
+    .container{
+       font-size: 110% ! important;
+    }
+    html,body,.container{
+      font-family: Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,WenQuanYi Micro Hei,Microsoft Yahei,sans-serif ! important;
+    }
+    /*url("/static/img/banner.jpg") no-repeat*/
+    .bs-docs-header{
+        background:linear-gradient(to right ,#333333 50%,#0d0b0c 50%) ;
+        padding: 0;
+    }
+    .new-back{
+        background-image: url("static/img/banner.jpg") ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 88px;
+    }
+    .markdown-body pre code,.markdown-body code{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .markdown-body code{
+      line-height: inherit;
+    }
+    .markdown-body h3{
+        font-size:1.4em;
+    }
+    .markdown-body h4{
+        font-size:1em;
+    }
+
+
+
+    /*index*/
+    .jw-style{
+        font-size: 1.75em;
+        color: #1d3e81;
+        line-height: 2em;
+    }
+
+    .understand-me {
+        text-align: center;
+        margin: 100px auto 0;
+    }
+
+    .understand-me li {
+        vertical-align: top;
+        width: 33.3333%;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        text-align: center;
+    }
+
+    .understand-me li span {
+        color: #1a1a1a;
+        font-size: 1.6em;
+
+    }
+
+    .understand-me p {
+        margin: 0 auto;
+        width: 90%;
+        text-align: left;
+        color: #4c4c4c;
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+
+    .understand-me img {
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+    .footers{
+        background:#0a0a0a url('static/img/footer.jpg') no-repeat center center;height: 248px; margin-top: 40px
+    }
+    .understand-me img:hover {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    @media screen and (max-width: 479px) {
+        .understand-me li{
+            width: 100%;
+            margin-bottom: 2em;
+        }
+        .new-back{
+            padding: 28px;
+        }
+        .understand-me p {
+            width: 60%;
+        }
+        .footers{
+            height: 80px;
+            background-size:auto 100%;;
+        }
+    }
+
+</style>
+<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+<script>
+if(!$('.understand-me').length){
+var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
+var count =  bar/26/2;
+var barHeight = $('.page-toc').outerHeight();
+$('.page-toc li').eq(0).children('a').addClass('red');
+var arr = [];
+$("h1,h2,h3,h4,h5,h6").each(function () {
+    arr.push($(this).position().top);
+});
+if(!($(window).height()-50 > barHeight)){
+    var flagTop = true;
+}
+function dark(){
+    var top =  Math.abs($('.page-toc > ul').position().top);
+    var cur = $(document).scrollTop();
+    for(var i = arr.length; i >=0;i--){
+        if(arr[i]<=cur){
+            break;
+        }
+    }
+    if(i===-1){
+        i = 0;
+    }
+    $('.page-toc li a').removeClass('red');
+    $('.page-toc li').eq(i).children('a').addClass('red');
+    if(flagTop){
+      if(i> arr.length-count){
+          $(' .page-toc > ul').css('top',-(barHeight-bar));
+          return;
+      }
+      if(i>count){
+          $(' .page-toc > ul').css('top',-26*(i-count));
+      }else{
+          $(' .page-toc > ul').css('top',0);
+      }
+    }
+}
+$(window).on('scroll',dark);
+}
+</script>
+
+</body>
+</html>
+
+
+<script>
+
+</script>
