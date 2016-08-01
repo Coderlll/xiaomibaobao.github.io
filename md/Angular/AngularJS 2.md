@@ -6,10 +6,12 @@
 >+ 不再根据路径来判断，而是根据一个路由下，不同参数和get post delete put来操作。实现表现层状态转换.
 
 ### directive 指令
->+ 使用 `.directive` 函数来添加自定义的指令。分为两种，装饰型和组件式的。
+>+ 使用 `.directive` 函数来添加自定义的指令。分为两种，装饰型和组 件式的。
 >+ 要调用自定义指令，HTML 元素上需要添加自定义指令名。
 >+ 使用驼峰法来命名一个指令，` runoobDirective,` 但在使用它时需要以 - 分割, `runoob-directive:`
-
+>+ compile函数用来对模板自身进行转换，而link函数负责在模型和视图之间进行动态关联。
+>+ Agular中会把多个控制器通用的部分放在service中，而而不是一个公共的控制器中。angular不推荐这样做。 
+>+ 
 ```
 //指令可以装饰我们的页面也可以创造标签
     //ng开头的指令是angular自带的指令，我们写指令的时候，不要用ng开头
@@ -28,8 +30,8 @@
             template:'<div>angular baby,React MM</div>',//模板,将hello标签里的内容变为<div>Hello</div>
             //传递参数时，要通过对象传递 键代表的是名字：
             template:'{{name}}{{myage}}<div ng-click="add({person:name,personage:myage})">angular MM</div>'
-            scope{
-            title:@/&/=;//&符用来引用指令上的方法。//@符是不支持双向数据绑定 取到的只是字符串,//=支持双向数据绑定，引用的是当前作用域下对应的变量
+            scope{//只要写了scope，则会让指令上的scope独立起来，不会相互影响。
+            title:@/&/=;//绑定策略：&符用来引用指令上的方法。//@符是不支持双向数据绑定 取到的只是字符串,//=支持双向数据绑定，引用的是当前作用域下对应的变量
             }
            compile: function (elements,attrs) {//参数可变//elements代表当前指令元素//attrs Attribute
                 var times = attrs['time']; //获取编译次数
@@ -75,5 +77,10 @@
         }
     })
 ```
+### ui-router
+>+ ng的路由和ajax相比：
+- ajax请求不会留下History记录，在后台系统没关系，但是用户无法保存书签或者共享- 好友。但是通过hash值就不一样了。
+- ajax无法SEO。
+- html5 的History API，可以实现不刷新但是留下历史记录
 
 
