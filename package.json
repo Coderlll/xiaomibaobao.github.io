@@ -1,24 +1,42 @@
 {
-    "name": "小米的博客",
-    "version": "0.0.1",
-    "description": "刘德元的前端博客",
+    "name": "xiaomi-Blog",
+    "version": "1.0.0",
+    "description": "'我每失去一条臂膀，就睁开一只眼睛；--顾城《杨树》",
     "keywords": [
-        ""
+        "js,node,react,webpack,full-stack;"
     ],
-    "homepage": "https://xiaomibaobao.github.io",
+    "homepage": "https://xiaomibaobao.github.io/",
     "author": "xiaomibaobao <yueyuele@163.com>",
     "repository": {
         "type": "git",
-        "url": "https://github.com/xiaomibaobao"
+        "url": "github.com/xiaomibaobao"
     },
     "licenses": "MIT",
     "idoc": {
-        "logo": "logo.jpg",
-        "theme": "blog",
+        "theme": "handbook",
         "md": [
             "index.md",
             {
-                "React": []
+                "React": [
+                    "React第一讲课堂笔记（初识React）.md",
+                    "React第七讲课堂笔记（组件嵌套）.md",
+                    "React第三讲课堂笔记（数据流）.md",
+                    "React第九讲课堂笔记（mixin）.md",
+                    "React第二讲课堂笔记（JSX语法）.md",
+                    "React第五讲课堂笔记（DOM操作）.md",
+                    "React第八讲课堂笔记（表单操作）.md",
+                    "React第六讲课堂笔记（事件）.md",
+                    "React第四讲课堂笔记（定义组件）.md",
+                    "React课堂笔记第十讲（编码规范）.md"
+                ]
+            },
+            {
+                "Node.js": [
+                    "MongoDB.md",
+                    "node 1.md",
+                    "Node.js知识详解.md",
+                    "node入门(2).md"
+                ]
             },
             {
                 "Angular": [
@@ -27,36 +45,34 @@
                 ]
             },
             {
-                "Node.js": [
-                    "node入门(2).md",
-                    "node 1.md",
-                    "Node.js知识详解.md"
-                ]
-            },
-            {
-                "前端工程": [
-                    "Gulp.md",
-                    "webpack入门及实践.md"
-                ]
-            },
-            {
                 "原生JavaScript": [
+                    "AJAX.md",
                     "DOM.md",
                     "ES6.md",
                     "HTTP.md",
                     "JS 基础知识拾遗.md",
-                    "函数.md",
+                    "Promise.md",
                     "事件.md",
-                    "AJAX.md",
+                    "函数.md",
                     "面向对象.md"
                 ]
             },
             {
                 "设计、算法和思考": [
-                    "订阅发布模式详解.md",
-                    "性能优化点总结.md",
+                    "学习Git.md",
                     "性能优化待办事项.md",
-                    "学习Git.md"
+                    "性能优化点总结.md",
+                    "订阅发布模式详解.md"
+                ]
+            },
+            {
+                "前端工程": [
+                    "Git.md",
+                    "Gulp.md",
+                    "HTTP缓存.md",
+                    "jade.md",
+                    "less.md",
+                    "webpack入门及实践.md"
                 ]
             },
             "CONTACT.md"

@@ -19,28 +19,28 @@ Controller(控制器), 即 JavaScript 函数，可以添加或修改属性。
 - 需求变更需要重构
 - 职责清晰，代码模块化
 - MVC只是手段，目标是模块化和复用
+#### 前端MVC困难
+1. 操作DOM的代码必须等待整个页面加载完成
+2. 多个JS出现互相依赖，程序员自己解决
+3. JS的原型继承给前端编程带来很多困难。利用原型继承来模拟继承效果。
 
 ### AngularJS 表达式
 
 + AngularJS 表达式可以包含字母，操作符，变量。AngularJS 表达式支持过滤器。可以写在 HTML 中。不支持条件判断，循环及异常。
 + AngularJS 表达式写在双大括号内：{{ expression }}。
-+ AngularJS 表达式把数据绑定到 HTML，这与 ng-bind 指令有异曲同工之妙。
++ AngularJS 表达式把数据绑定到 HTML，这与  指令有异曲同工之妙。
 + AngularJS 表达式 很像 JavaScript 表达式：它们可以包含文字、运算符和变量。
 
 ### AngularJS Scope(作用域)
 >+ 引入angular js后，会得到一个angular对象，
 >+ 一切从模块开始，angular.module('名字'，[依赖的模块，可以使用空数组]，[config])，返回值是当前模块。
-	- `app.run(function($rootScope)){}` ,run在启动时最先执行，一般用来配置默认属性
+>+  `app.run(function($rootScope)){}` ,run方法在加载完所有模块后会被执行一次，在启动时最先执行，一般用来配置默认属性，$templateCache.put('xx.html',<div>)可以用来缓存模板。在指令中用get调用。
 >+ 当你在 AngularJS 创建控制器时，你可以将` $scope` 对象当作一个参数传递:`$scope`就是MVVM中的VM。
 >+ 当在控制器中添加 `$scope `对象时，视图 (HTML) 可以获取了这些属性。
 >+ 视图中，你不需要添加 `$scope` 前缀, 只需要添加属性名即可，如： {{carname}}。必须在同一`ng-app`作用域下。
->+ 根作用域
-所有的应用都有一个` $rootScope`，它可以作用在 ng-app 指令包含的所有 HTML 元素中。
-`$rootScope `可作用于整个应用中。是各个 controller 中 scope 的桥梁。用 rootscope 定义的值，可以在各个 controller 中使用。
->+ `$scope and $rootScope`
-	1. 继承：子可以继承父，反之不行。
-	2. 调用：
-	3. 
+>+ 根作用域,所有的应用都有一个` $rootScope`，它可以作用在 ng-app 指令包含的所有 HTML 元素中。`$rootScope `可作用于整个应用中。是各个 controller 中 scope 的桥梁。用 rootscope 定义的值，可以在各个 controller 中使用。
+>+ `$scope and $rootScope`1. 继承：子可以继承父，反之不行。2. 调用：
+	
 ### AngularJS 模块
 1. 模块定义了一个应用程序。模块是应用控制器的容器。控制器通常属于一个模块。
 2. 对于 HTML 应用程序，通常建议把所有的脚本都放置在 <body> 元素的最底部。
@@ -76,7 +76,9 @@ $scope.data = [
 4. 注意：
         1，不要复用controller，
         2，不要操作DOM
-        3，不要在控制器中格式化数据，用filter，不然会改掉数据(控制器中拿到的一般都是最新数据)。
+        3，不要在控制器中格式化数据，用filter，
+        4，一般Controller之间不要相互调用，控制器之间的交互通过事件进行。（scope或者事件）
+        不然会改掉数据(控制器中拿到的一般都是最新数据)。
 5. **压缩时会变，要使用数组写法**.
 6. 控制器之间的交互：
 ```
