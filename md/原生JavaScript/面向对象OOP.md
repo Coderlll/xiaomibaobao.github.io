@@ -6,6 +6,7 @@
 >+ 任何对象（new出来的实例）最终都能通过`__proto__`找到Object
 >+ 所有类都是Function的实例
 >+ 同时Object.prototype是Function.prototype的上级，因为Function.prototype属于对象，Object是对象中祖基类.
+
 ### 1. 面向对象的特点，JS中：
 ##### 1.1封装：
 - 低耦合高内聚
@@ -130,7 +131,7 @@
 ##### 3.4 混合模式继承：原型模式继承+call继承  （工作中也很常用的一种方式）
 弊端：私有的会重复（子类原型上多了一套父类的私有属性）   因为call会继承私有的属性和方法，通过原型继承可以继承私有的和公有的，所以私有的属性和公有的属性有重复的。
 ##### 3.5寄生组合式继承
-
+```
 B.prototype=Object.create(A.prototype)但是Object.create不兼容
           所以重写一个方法：B.prototype=Object.create(A.prototype)
           function myCreate(o){
@@ -138,6 +139,8 @@ B.prototype=Object.create(A.prototype)但是Object.create不兼容
                  Fn.prototype = o;
                  return new Fn();
     }
+```
+
 ##### 3.6 中间件继承法--不兼容-  __proto__ 不兼容IE
 Child.prototype.__proto__ = Parent.prototype;//把父类的公有的当做子类的公有的
 
