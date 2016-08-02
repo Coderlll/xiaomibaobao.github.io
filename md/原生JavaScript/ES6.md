@@ -39,6 +39,27 @@ const A = "0";
 }
 console.log(A)
 ```
+实战一下：新手很容易写出类似的代码。
+```
+<button>一</button>
+<button>二</button>
+<button>三</button>
+<button>四</button>
+
+<div id="output"></div>
+
+<script>
+  var buttons = document.querySelectorAll('button')
+  var output = document.querySelector('#output')
+
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+      output.innerText = buttons[i].innerText
+    })
+  }
+</script>
+```
+通过排查，我们可以发现，每次我们点击按钮时，`事件监听回调函数`中得到的变量 i 都会等于 buttons.length，也就是这里的 4。而 buttons[4] 恰恰不存在，所以导致了错误的发生。在ES6中，我们可以吧for循环的语句中的var 改成 let；因为 let 语句会使该变量处于一个 ` 块级作用域 ` 中，从而让事件监听回调函数中的变量引用得到保持。
 
 ### 3. 解构
 ##### 3.1 解析数组
@@ -124,7 +145,7 @@ desc('xiaomi');//xiaomi is 8 years old
 let print = function(a,b,c){
     console.log(a,b,c);
 }
-print([1,2,3]);//1,2,3
+print([1,2,3]);//[1, 2, 3]
 print(...[1,2,3]);//1,2,3
 
 // 可以替代apply
@@ -149,7 +170,7 @@ max(1, 3, 4);
 let rest = function(a,...b){
     console.log(a,b);
 }
-rest(1,2,3);
+rest(1,2,3);//1,[2,3]
 ```
 ##### 5.3 函数的名字以及解构
 ```

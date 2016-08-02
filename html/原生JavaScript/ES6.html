@@ -62,7 +62,26 @@ console.log(names);
     console.log(A)
 }
 console.log(A)
-</code></pre><h3 id="t43. &#x89E3;&#x6784;">3. &#x89E3;&#x6784; <a href="#t43. &#x89E3;&#x6784;"> # </a></h3>
+</code></pre><p>&#x5B9E;&#x6218;&#x4E00;&#x4E0B;&#xFF1A;&#x65B0;&#x624B;&#x5F88;&#x5BB9;&#x6613;&#x5199;&#x51FA;&#x7C7B;&#x4F3C;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code>&lt;button&gt;&#x4E00;&lt;/button&gt;
+&lt;button&gt;&#x4E8C;&lt;/button&gt;
+&lt;button&gt;&#x4E09;&lt;/button&gt;
+&lt;button&gt;&#x56DB;&lt;/button&gt;
+
+&lt;div id=&quot;output&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  var buttons = document.querySelectorAll(&apos;button&apos;)
+  var output = document.querySelector(&apos;#output&apos;)
+
+  for (var i = 0; i &lt; buttons.length; i++) {
+    buttons[i].addEventListener(&apos;click&apos;, function() {
+      output.innerText = buttons[i].innerText
+    })
+  }
+&lt;/script&gt;
+</code></pre><p>&#x901A;&#x8FC7;&#x6392;&#x67E5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x6BCF;&#x6B21;&#x6211;&#x4EEC;&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x65F6;&#xFF0C;<code>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x56DE;&#x8C03;&#x51FD;&#x6570;</code>&#x4E2D;&#x5F97;&#x5230;&#x7684;&#x53D8;&#x91CF; i &#x90FD;&#x4F1A;&#x7B49;&#x4E8E; buttons.length&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8FD9;&#x91CC;&#x7684; 4&#x3002;&#x800C; buttons[4] &#x6070;&#x6070;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x6240;&#x4EE5;&#x5BFC;&#x81F4;&#x4E86;&#x9519;&#x8BEF;&#x7684;&#x53D1;&#x751F;&#x3002;&#x5728;ES6&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5427;for&#x5FAA;&#x73AF;&#x7684;&#x8BED;&#x53E5;&#x4E2D;&#x7684;var &#x6539;&#x6210; let&#xFF1B;&#x56E0;&#x4E3A; let &#x8BED;&#x53E5;&#x4F1A;&#x4F7F;&#x8BE5;&#x53D8;&#x91CF;&#x5904;&#x4E8E;&#x4E00;&#x4E2A; <code>&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;</code> &#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x8BA9;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x5F15;&#x7528;&#x5F97;&#x5230;&#x4FDD;&#x6301;&#x3002;</p>
+<h3 id="t43. &#x89E3;&#x6784;">3. &#x89E3;&#x6784; <a href="#t43. &#x89E3;&#x6784;"> # </a></h3>
 <h5 id="t53.1 &#x89E3;&#x6790;&#x6570;&#x7EC4;">3.1 &#x89E3;&#x6790;&#x6570;&#x7EC4; <a href="#t53.1 &#x89E3;&#x6790;&#x6570;&#x7EC4;"> # </a></h5>
 <p>&#x89E3;&#x6784;&#x610F;&#x601D;&#x5C31;&#x662F;&#x5206;&#x89E3;&#x4E00;&#x4E2A;&#x4E1C;&#x897F;&#x7684;&#x7ED3;&#x6784;,&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x79CD;&#x7C7B;&#x4F3C;&#x6570;&#x7EC4;&#x7684;&#x65B9;&#x5F0F;&#x5B9A;&#x4E49;N&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x503C;&#x6309;&#x7167;&#x89C4;&#x5219;&#x8D4B;&#x503C;&#x8FC7;&#x53BB;&#x3002;</p>
 <pre><code>var [name,age] = [&apos;xiaomi&apos;,23];
@@ -128,7 +147,7 @@ desc(&apos;xiaomi&apos;);//xiaomi is 8 years old
 let print = function(a,b,c){
     console.log(a,b,c);
 }
-print([1,2,3]);//1,2,3
+print([1,2,3]);//[1, 2, 3]
 print(...[1,2,3]);//1,2,3
 
 // &#x53EF;&#x4EE5;&#x66FF;&#x4EE3;apply
@@ -151,7 +170,7 @@ max(1, 3, 4);
 <pre><code>let rest = function(a,...b){
     console.log(a,b);
 }
-rest(1,2,3);
+rest(1,2,3);//1,[2,3]
 </code></pre><h5 id="t155.3 &#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#x4EE5;&#x53CA;&#x89E3;&#x6784;">5.3 &#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#x4EE5;&#x53CA;&#x89E3;&#x6784; <a href="#t155.3 &#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#x4EE5;&#x53CA;&#x89E3;&#x6784;"> # </a></h5>
 <pre><code>var desc = function descname(){}
 console.log(desc.name);//descname

@@ -1,5 +1,5 @@
 # 欢迎来到我的博客。
-### 我是一个小小的前端开发，乐于学习和分享。以下是我的一些个人私货。
+### 我是刘德元，一个小小的前端开发，乐于学习和分享。以下是我的一些个人私货。
 
 
 #### 我的主要学习阵地：
@@ -13,6 +13,7 @@
 ####  性能优化教程
 - [前端性能优化-基础知识认知](http://www.imooc.com/learn/580)
 - [研究首屏时间？你先要知道这几点细节](http://www.alloyteam.com/2016/01/points-about-resource-loading/)
+
 ####  Nodejs
 - [Node.js 源站应用稳定性保障](http://taobaofed.org/blog/2016/01/05/dragonfly-stability/)
 - [node.js能开发大型网站吗？](https://www.zhihu.com/question/21176891)
@@ -30,7 +31,7 @@
 - [如何更专业的使用Chrome开发者工具-w3cplus](http://www.w3cplus.com/tools/how-to-use-chrome-devtools-like-a-pro.html)
 
 
-#####   工作 | 协同 | 流程
+####   工作 | 协同 | 流程
 - [番茄工作法](http://baike.baidu.com/view/5259318.htm)
 - [如何融入工作？如何看待工作的意义](https://www.zhihu.com/question/39465280)
 - [让思路更清晰——我是怎样使用思维导图的](https://blog.coding.net/blog/coding-mindmap)
@@ -42,3 +43,6 @@
 - [大学看哪些书比较适合？](https://www.zhihu.com/question/46726145)
 - [你的努力程度之低，根本轮不到拼天赋](https://zhuanlan.zhihu.com/p/20129091?f3fb8ead20=1c4ca537fbf11dc08fc665b45498e24c)
 - [Web前端的路该怎么走？](https://www.zhihu.com/question/34388831)
+
+#### 联系我
+- [点这里](https://xiaomibaobao.github.io/html/CONTACT.html)
